@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 08:56:01 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMC0yOTswNzozNToxNiBBTTsyMjA4"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMC0yOTswODo1NjowMSBBTTsxOzIzMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Radius" type="Real" array="False" size=""/>
+            <declare name="Variable" type="Real" array="False" size=""/>
+            <declare name="Diameter" type="Real" array="False" size=""/>
+            <declare name="Answer" type="Integer" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <declare name="Yes" type="String" array="False" size=""/>
+            <output expression="&quot;Do you have the value of the Radius or Diameter?&quot;" newline="True"/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;Radius&quot;">
+                <then>
+                    <output expression="&quot;Cool! Please enter the value of the Radius.&quot;" newline="True"/>
+                    <input variable="Radius"/>
+                    <assign variable="Answer" expression="pi * (Radius^2)"/>
+                </then>
+                <else>
+                    <output expression="&quot;I suppose you have the value of the Diameter? Yes or No?&quot;" newline="True"/>
+                    <input variable="Response"/>
+                    <if expression="Response = &quot;Yes&quot;">
+                        <then>
+                            <output expression="&quot;Brilliant! Please enter the value of the Diameter.&quot;" newline="True"/>
+                            <input variable="Diameter"/>
+                            <assign variable="Answer" expression="pi * ((Diameter/2)^2)"/>
+                        </then>
+                        <else>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="Answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

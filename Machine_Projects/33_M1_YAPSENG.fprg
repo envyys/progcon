@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 07:38:12 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzE7MjAxOS0xMC0yNTswODozNTo1OCBBTTsyMjA2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzE7MjAxOS0xMC0yNTswOToxNDoxNyBBTTsxOzIzMDc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMC0yOTswNzozODoxMiBBTTsyOzIzMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FirstNumber" type="Integer" array="False" size=""/>
+            <declare name="SecondNumber" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter first number&quot;" newline="True"/>
+            <input variable="FirstNumber"/>
+            <output expression="&quot;Enter your second number&quot;" newline="True"/>
+            <input variable="SecondNumber"/>
+            <assign variable="Answer" expression="FirstNumber + SecondNumber"/>
+            <output expression="Answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
