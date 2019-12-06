@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-29 09:21:43 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMS0yOTswODoxNzo1MCBBTTsyMjA4"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMS0yOTswOToyMTo0MyBBTTszOzIzMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Rate" type="Integer" array="False" size=""/>
+            <declare name="Grade" type="Integer" array="False" size=""/>
+            <declare name="GradeQuatro" type="Integer" array="False" size=""/>
+            <declare name="thankYou" type="String" array="False" size=""/>
+            <output expression="&quot;Hello! This is Envy, 'The Cheese Grader'.. Hehe get it?&quot;" newline="True"/>
+            <output expression="&quot;Kindly input your rate to know its equivalent grade.. and say 'thank you' afterwards, you ungrateful swine.&quot;" newline="True"/>
+            <input variable="Rate"/>
+            <if expression="Rate &gt;= 95">
+                <then>
+                    <output expression="&quot;Your grade is 4.0. What do we say?&quot;" newline="True"/>
+                    <input variable="thankYou"/>
+                </then>
+                <else>
+                    <if expression="Rate &gt;= 91">
+                        <then>
+                            <output expression="&quot;Your grade is 3.5. What do we say?&quot;" newline="True"/>
+                            <input variable="thankYou"/>
+                        </then>
+                        <else>
+                            <if expression="Rate &gt;= 87">
+                                <then>
+                                    <output expression="&quot;Your grade is 3.0. What do we say?&quot;" newline="True"/>
+                                    <input variable="thankYou"/>
+                                </then>
+                                <else>
+                                    <if expression="Rate &gt;= 83">
+                                        <then>
+                                            <output expression="&quot;Your grade is 2.5. What do we say?&quot;" newline="True"/>
+                                            <input variable="thankYou"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Rate &gt;= 79">
+                                                <then>
+                                                    <output expression="&quot;Your grade is 2.0. What do we say?&quot;" newline="True"/>
+                                                    <input variable="thankYou"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="Rate &gt;= 75">
+                                                        <then>
+                                                            <output expression="&quot;Your grade is 1.5. What do we say?&quot;" newline="True"/>
+                                                            <input variable="thankYou"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="Rate &gt;= 70">
+                                                                <then>
+                                                                    <output expression="&quot;Your grade is 1.0. What do we say?&quot;" newline="True"/>
+                                                                    <input variable="thankYou"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="Rate &lt;= 68">
+                                                                        <then>
+                                                                            <output expression="&quot;Your grade is R. What do we say?&quot;" newline="True"/>
+                                                                            <input variable="thankYou"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="Rate = 69">
+                                                                                <then>
+                                                                                    <output expression="&quot;Aye, you know what that means?&quot;" newline="True"/>
+                                                                                    <input variable="thankYou"/>
+                                                                                </then>
+                                                                                <else/>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="thankYou = &quot;thank you&quot;">
+                <then>
+                    <output expression="&quot;Aww, you remembered. You're welcome! &lt;3 Come back anytime!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="thankYou = &quot;awit&quot;">
+                        <then>
+                            <output expression="&quot;may lawit. CHAR HHAHAHAHAHA&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="thankYou = &quot;i dont have enough money for chicken nuggets :(&quot;">
+                                <then>
+                                    <output expression="&quot;HAHAHAHAHAHA YOU ARE GOD&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;No! We either say 'thank you' or 'i dont have enough money for chicken nuggets :('. You ungrateful swine. Don't ever come back again. &gt;:(&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

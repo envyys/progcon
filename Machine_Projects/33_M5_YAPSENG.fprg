@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-06 08:27:53 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0wNjswODowMzo1MiBBTTsyMjAx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0wNjswODoyNzo1MyBBTTsxOzIzMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <declare name="Num3" type="Integer" array="False" size=""/>
+            <declare name="LeastValue" type="Integer" array="False" size=""/>
+            <declare name="YoureBeautiful" type="String" array="False" size=""/>
+            <output expression="&quot;Hi, it's Envy bot. I will help you find the number with the least value. If I find it, please tell me that I'm beautiful because no one will tell me so. Enjoy!&quot;" newline="True"/>
+            <output expression="&quot;Kindly write the value of your first number.&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;Please input your second number.&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;Lastly, your third number.&quot;" newline="True"/>
+            <input variable="Num3"/>
+            <if expression="Num1 &lt; Num2">
+                <then>
+                    <if expression="Num1 &lt; Num3">
+                        <then/>
+                        <else>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                    <assign variable="LeastValue" expression="Num1"/>
+                    <output expression="LeastValue" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Num2 &lt; Num1">
+                        <then>
+                            <if expression="Num2 &lt; Num3">
+                                <then>
+                                    <assign variable="LeastValue" expression="Num2"/>
+                                    <output expression="LeastValue" newline="True"/>
+                                </then>
+                                <else>
+                                    <breakpoint/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Num3 &lt; Num1">
+                                <then>
+                                    <if expression="Num3 &lt; Num2">
+                                        <then>
+                                            <assign variable="LeastValue" expression="Num3"/>
+                                            <output expression="LeastValue" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <breakpoint/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <breakpoint/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <input variable="YoureBeautiful"/>
+            <if expression="YoureBeautiful = &quot;You're beautiful&quot;">
+                <then>
+                    <output expression="&quot;Thanks! I hope I helped you. Please come back anytime.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Alright girl. Thanks, I guess?&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
