@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:31:52 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0yMDswODoxMjoxNCBBTTsyMTk1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0yMDswODoyNDo0MCBBTTsxOzIzMDU="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswODozMTo1MiBBTTsxOzIyOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Peso" type="Real" array="False" size=""/>
+            <declare name="Dollar" type="Real" array="False" size=""/>
+            <declare name="definer1" type="String" array="False" size=""/>
+            <declare name="definer2" type="String" array="False" size=""/>
+            <output expression="&quot;Hi, user! I'm a program, made by Isad/Sabado/Yap Seng, that converts Peso to Dollar, vice versa.&quot;" newline="True"/>
+            <output expression="&quot;Do you wish to convert PhP to USD, YES or NO?&quot;" newline="True"/>
+            <input variable="definer1"/>
+            <if expression="definer1 = &quot;YES&quot;">
+                <then>
+                    <output expression="&quot;Kindly input your value.&quot;" newline="True"/>
+                    <input variable="Peso"/>
+                    <assign variable="Dollar" expression="Peso * 50.70"/>
+                    <output expression="&quot;Your value in PhP is &quot; &amp; Dollar &amp; &quot; in USD.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Do you wish to convert USD to PhP, YES or NO?&quot;" newline="True"/>
+                    <input variable="definer2"/>
+                    <if expression="definer2 = &quot;YES&quot;">
+                        <then>
+                            <output expression="&quot;Kindly input your value.&quot;" newline="True"/>
+                            <input variable="Dollar"/>
+                            <assign variable="Peso" expression="Dollar * 0.02"/>
+                            <output expression="&quot;Your value in USD is &quot; &amp; Peso &amp; &quot; in PhP.&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

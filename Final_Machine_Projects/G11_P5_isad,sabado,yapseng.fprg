@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:33:00 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswNzo1OToyNyBBTTsyMjE1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswODo0NjowNCBBTTsxOzIzMTU="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswODozMzowMCBBTTsxOzIyOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DiscountedPrice" type="Real" array="False" size=""/>
+            <declare name="OriginalPrice" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="Discount2" type="Real" array="False" size=""/>
+            <output expression="&quot;Good day, user! I'm a program, made by Isad/Sabado/YapSeng, that computes for the discounted price on a sale.&quot;" newline="True"/>
+            <output expression="&quot;Kindly input the original price.&quot;" newline="True"/>
+            <input variable="OriginalPrice"/>
+            <output expression="&quot;Kindly input the discount sale.&quot;" newline="True"/>
+            <input variable="Discount"/>
+            <assign variable="Discount2" expression="0.01 * (100-Discount)"/>
+            <assign variable="DiscountedPrice" expression="OriginalPrice*Discount2"/>
+            <output expression="DiscountedPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

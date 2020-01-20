@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:30:46 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAyMC0wMS0wNzswODoyNzowOSBBTTsyMjAw"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAyMC0wMS0wNzswODozMTo0OCBBTTsxOzIzMDY="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswODozMDo0NiBBTTsxOzIzMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividend" type="Integer" array="False" size=""/>
+            <declare name="divisor" type="Integer" array="False" size=""/>
+            <declare name="quotient" type="Real" array="False" size=""/>
+            <output expression="&quot;Hi, user! I'm a program, made by Isad/Sabado/Yap Seng, that divides two given values.&quot;" newline="True"/>
+            <output expression="&quot;Kindly input your dividend (the number being divided).&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <output expression="&quot;Then your divisor (the number by which the dividend is divided).&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <output expression="&quot;The answer is...&quot;" newline="True"/>
+            <output expression="quotient" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

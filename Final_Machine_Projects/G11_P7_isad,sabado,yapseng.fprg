@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-19 02:17:54 AM"/>
+        <attribute name="created" value="VXNlcjtVU0VSLVBDOzIwMjAtMDEtMTk7MDE6NTY6NTIgQU07MjE4OQ=="/>
+        <attribute name="edited" value="VXNlcjtVU0VSLVBDOzIwMjAtMDEtMTk7MDI6MTc6NTQgQU07MTsyMjk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="TryAgain" type="Boolean" array="False" size=""/>
+            <declare name="Response" type="String" array="False" size=""/>
+            <output expression="&quot;Hi there, user! This is a program, made by Isad/Sabado/Yap Seng,that prints numbers -999 and up after being input.&quot;" newline="True"/>
+            <assign variable="TryAgain" expression="true"/>
+            <while expression="TryAgain = true">
+                <output expression="&quot;Please input a number. (Note: The program won't work unless you input the right number.)&quot;" newline="True"/>
+                <input variable="Number"/>
+                <if expression="Number = -999">
+                    <then>
+                        <for variable="Number" start="Number" end="0" direction="inc" step="1">
+                            <output expression="Number" newline="True"/>
+                        </for>
+                        <output expression="&quot;Would you like to do it again? Yes or No?&quot;" newline="True"/>
+                        <input variable="Response"/>
+                        <if expression="Response = &quot;Yes&quot;">
+                            <then>
+                                <assign variable="TryAgain" expression="true"/>
+                            </then>
+                            <else>
+                                <assign variable="TryAgain" expression="false"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="TryAgain" expression="true"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Thanks for checking! Sana po maka 4.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

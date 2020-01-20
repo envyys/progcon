@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:31:22 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswNzo0MjowMSBBTTsyMTk5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswNzo1OToxOSBBTTsxOzIzMjQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswODozMToyMiBBTTsyOzIyOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="reply" type="String" array="False" size=""/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <output expression="&quot;Good day, user! I'm a program, made by Isad/Sabado/Yap Seng, that identifies if a number is ODD or EVEN. Kindly simply input a value and I'll state if it's odd or even.&quot;" newline="False"/>
+            <input variable="value"/>
+            <if expression="value % 2 = 0">
+                <then>
+                    <output expression="&quot;The number is EVEN.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;The number is ODD.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

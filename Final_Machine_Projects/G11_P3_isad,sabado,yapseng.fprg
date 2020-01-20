@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 09:04:42 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswODowNTozMyBBTTsyMjA0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswODoxNzoxMSBBTTsxOzIzMTE="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswOTowNDo0MiBBTTsxOzIyOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="feet" type="Integer" array="False" size=""/>
+            <declare name="inches" type="Integer" array="False" size=""/>
+            <declare name="definer1" type="String" array="False" size=""/>
+            <declare name="definer2" type="String" array="False" size=""/>
+            <output expression="&quot;Good day, user! I'm a program, made by Isad/Sabado Yap Seng, that converts feet to inches, vice versa.&quot;" newline="True"/>
+            <output expression="&quot;Do you want to convert feet to inches, YES or NO?&quot;" newline="True"/>
+            <input variable="definer1"/>
+            <if expression="definer1 = &quot;YES&quot;">
+                <then>
+                    <output expression="&quot;Kindly input your value.&quot;" newline="True"/>
+                    <input variable="feet"/>
+                    <assign variable="inches" expression="feet*12"/>
+                    <output expression="&quot;Your feet value is &quot; &amp; inches &amp; &quot; in inches.&quot;" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;Do you want to convert inches to feet, YES or NO?&quot;" newline="True"/>
+                    <input variable="definer2"/>
+                    <if expression="definer2 = &quot;YES&quot;">
+                        <then>
+                            <output expression="&quot;Kindly input your value.&quot;" newline="True"/>
+                            <input variable="inches"/>
+                            <assign variable="feet" expression="inches/12"/>
+                            <output expression="&quot;Your inches value is &quot; &amp; feet &amp; &quot; in feet.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

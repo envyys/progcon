@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:32:19 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswODoxNzozMSBBTTsyMjA1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAxOS0xMi0xNzswODozMjowMSBBTTsxOzIzMDc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswODozMjoxOSBBTTsxOzIzMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Celsius" type="Real" array="False" size=""/>
+            <declare name="Fahrenheit" type="Real" array="False" size=""/>
+            <declare name="definer1" type="String" array="False" size=""/>
+            <declare name="definer2" type="String" array="False" size=""/>
+            <output expression="&quot;Good day, user! I'm a program, made by Isad/Sabado/Yap Seng, that converts Celsius to Fahrenheit, vice versa.&quot;" newline="True"/>
+            <output expression="&quot;Do you want to convert Celsius to Fahrenheit, YES or NO?&quot;" newline="True"/>
+            <input variable="definer1"/>
+            <if expression="definer1 = &quot;YES&quot;">
+                <then>
+                    <output expression="&quot;Kindly input your value.&quot;" newline="True"/>
+                    <input variable="Celsius"/>
+                    <assign variable="Fahrenheit" expression="(Celsius* 9/5) + 32"/>
+                    <output expression="&quot;Your Celsius value is &quot; &amp;Fahrenheit&amp; &quot; in Fahrenheit.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Do you want to convert Fahrenheit to Celsius, YES or NO?&quot;" newline="True"/>
+                    <input variable="definer2"/>
+                    <if expression="definer2 = &quot;YES&quot;">
+                        <then>
+                            <output expression="&quot;Kindly input your value.&quot;" newline="True"/>
+                            <input variable="Fahrenheit"/>
+                            <assign variable="Celsius" expression="(Fahrenheit-32)* 5/9"/>
+                            <output expression="&quot;Your Fahrenheit value is &quot; &amp;Celsius&amp; &quot; in Celsius.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

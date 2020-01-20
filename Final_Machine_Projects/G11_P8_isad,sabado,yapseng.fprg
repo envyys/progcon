@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 09:24:09 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzY7MjAyMC0wMS0wNzswODozMjozNCBBTTsyMTk0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzY7MjAyMC0wMS0wNzswODo1NjoxNSBBTTsxOzIzMDc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjQ7MjAyMC0wMS0xNzswOToyNDowOSBBTTs1OzIzMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Hour" type="Integer" array="False" size=""/>
+            <declare name="PMHour" type="Integer" array="False" size=""/>
+            <declare name="AMHour" type="Integer" array="False" size=""/>
+            <declare name="Minute" type="Integer" array="False" size=""/>
+            <declare name="AMorPM" type="String" array="False" size=""/>
+            <output expression="&quot;Hi, user! I'm a program, made by Isad/Sabado/YapSeng, that converts time to military time.&quot;" newline="True"/>
+            <output expression="&quot;May I know what's the time you want to convert? Please input the hour.&quot;" newline="False"/>
+            <input variable="Hour"/>
+            <output expression="&quot;Then the minute.&quot;" newline="True"/>
+            <input variable="Minute"/>
+            <output expression="&quot;Is it AM or PM?&quot;" newline="True"/>
+            <input variable="AMorPM"/>
+            <if expression="AMorPM = &quot;AM&quot;">
+                <then>
+                    <if expression="Hour = 12">
+                        <then>
+                            <assign variable="AMHour" expression="Hour - 12"/>
+                        </then>
+                        <else>
+                            <assign variable="AMHour" expression="Hour"/>
+                        </else>
+                    </if>
+                    <output expression="AMHour &amp; Minute" newline="True"/>
+                </then>
+                <else>
+                    <if expression="AMorPM = &quot;PM&quot;">
+                        <then>
+                            <if expression="Hour = 12">
+                                <then>
+                                    <assign variable="PMHour" expression="Hour + 1"/>
+                                </then>
+                                <else>
+                                    <assign variable="PMHour" expression="Hour + 12"/>
+                                </else>
+                            </if>
+                            <output expression="&quot;The time is...&quot;" newline="True"/>
+                            <output expression="PMHour &amp; Minute" newline="True"/>
+                        </then>
+                        <else>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
